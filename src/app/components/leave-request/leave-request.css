@@ -1,0 +1,107 @@
+/* Global Reset & Font */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e9efff, #f9fbff);
+  margin: 0;
+  padding: 0;
+}
+
+/* Title */
+h2 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* Form Container */
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+/* Input Group */
+.input {
+  margin-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.input label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #34495e;
+  font-size: 15px;
+}
+
+/* Inputs and Textarea */
+.input input,
+.input textarea {
+  padding: 12px 14px;
+  font-size: 15px;
+  border: 1px solid #ccd6dd;
+  border-radius: 8px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fdfdfd;
+}
+
+.input input:focus,
+.input textarea:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+  outline: none;
+}
+
+/* File Upload */
+input[type="file"] {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+/* Button Styles */
+button {
+  margin-top: 10px;
+  padding: 12px;
+  width: 100%;
+  background-color: #3498db;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+}
+
+button:hover:not([disabled]) {
+  background-color: #2a80b9;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button[disabled] {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 25px 20px;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+}

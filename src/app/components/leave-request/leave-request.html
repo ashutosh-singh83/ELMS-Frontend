@@ -1,0 +1,26 @@
+<h2>Apply for Leave</h2>
+
+<div class="container">
+  <form [formGroup]="leaveForm" (ngSubmit)="submitLeave()">
+    <div class="input">
+      <label for="startDate">Start Date:</label>
+      <input type="date" formControlName="startDate" required />
+    </div>
+    <div class="input">
+      <label for="endDate">End Date:</label>
+      <input type="date" formControlName="endDate" required />
+    </div>
+    <div class="input">
+      <label for="reason">Reason:</label>
+      <textarea formControlName="reason" required></textarea>
+    </div>
+    <div class="input">
+      <label for="employeeId">Employee ID:</label>
+      <input type="number" formControlName="employeeId" required />
+    </div>
+
+    <!-- <input type="file" (change)="onFileSelected($event)" /> -->
+
+    <button type="submit" [disabled]="leaveForm.invalid">Submit</button>
+  </form>
+</div>
