@@ -41,7 +41,7 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_KIND_GLACIER_0B1F36800 }}
           action: upload
           skip_app_build: true
-          app_location: "dist/elms-frontend"
+          app_location: "dist/elms-frontend/browser"
           output_location: ""
 
   close_pull_request_job:
